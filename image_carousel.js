@@ -17,7 +17,7 @@ function featuredbwidget(a) {
             h = e.extend({}, h, a);
             var g = e(h.featuredID);
             var d = h.featuredNum * 200;
-            g.html('<div class="featslider"><ul class="featured-widget-list"></ul><div class="feat-buttons" [data-darkreader-ignore]><a href="#" class="feat-prev">Prev</a><a href="#" class="feat-next">Next</a></div></div>');
+            g.html('<div class="featslider"><ul class="featured-widget-list"></ul><div class="feat-buttons" data-darkreader-ignore><a href="#" class="feat-prev">Prev</a><a href="#" class="feat-next">Next</a></div></div>');
             var f = function(w) {
                 var q, k, m, u, x, p, t, v, r, l = "",
                     s = w.feed.entry;
@@ -40,7 +40,7 @@ function featuredbwidget(a) {
                     p = r.substring(5, 7);
                     t = r.substring(8, 10);
                     v = h.byMonth[parseInt(p, 10) - 1];
-                    l += '<li><a href="' + q + '"><div class="featuredbg"></div><img class="featuredthumb" src="' + u + '"/><div class="feature-info"><h5>' + k + '</h5></a><div class="featured-meta"><span class="fdate"><span class="fday">' + t + '</span> <span class="fmonth">' + v + '</span> <span class="fyear">' + x + '</span></span> - <span class="fauthor">' + m + "</span></div></div></li>"
+                    l += '<li><div class="featuredbg"></div><img class="featuredthumb" src="' + u + '"/><div class="feature-info"><div class="featured-meta"><h5>' + k + '</h5><span class="fdate"><span class="fday">' + t + '</span> <span class="fmonth">' + v + '</span> <span class="fyear">' + x + '</span></span> - <span class="fauthor">' + m + "</span></div></div></li>"
                 }
                 e("ul", g).append(l).addClass(h.loadingFeatured)
             };
