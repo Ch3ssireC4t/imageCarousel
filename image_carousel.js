@@ -17,7 +17,7 @@ function featuredbwidget(a) {
             h = e.extend({}, h, a);
             var g = e(h.featuredID);
             var d = h.featuredNum * 200;
-            g.html('<div class="featslider"><ul class="featured-widget-list"></ul><div class="feat-buttons"><a href="#" class="feat-prev">Prev</a><a href="#" class="feat-next">Next</a></div></div>');
+            g.html('<div class="featslider"><ul class="featured-widget-list"></ul><div class="feat-buttons" [data-darkreader-ignore]><a href="#" class="feat-prev">Prev</a><a href="#" class="feat-next">Next</a></div></div>');
             var f = function(w) {
                 var q, k, m, u, x, p, t, v, r, l = "",
                     s = w.feed.entry;
